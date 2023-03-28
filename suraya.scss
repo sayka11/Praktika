@@ -14,9 +14,17 @@ html {
   margin: 0;
 }
 
+@media screen and (max-width: 1268px) {
+  .conteiner-1 .cloud-1 .loginWrapper .ikonka-eng {
+    height: 50px;
+    width: 50px;
+    margin-left: 0;
+  }
+}
 .conteiner-1 {
   background-image: url(compback.svg);
   background-size: cover;
+  background-position: center;
   height: 1000px;
   .cloud-1 {
     display: flex;
@@ -34,12 +42,11 @@ html {
     .loginWrapper {
       display: flex;
       align-items: center;
-      margin-right: 20px;
+      gap: 20px;
 
       .ikonka-eng {
         height: 50px;
         width: 50px;
-        margin-left: 280px;
       }
 
       .ikonka-strelka {
@@ -51,7 +58,6 @@ html {
       & p {
         font-family: "Lato", sans-serif;
         font-weight: 400;
-        margin-left: 20px;
         font-size: medium;
         color: #ffffff;
       }
@@ -62,7 +68,6 @@ html {
         border-radius: 5px;
         background-color: transparent;
         color: #ffffff;
-        margin-left: 45px;
         width: 100px;
       }
     }
@@ -76,7 +81,6 @@ html {
 
   .overview {
     display: flex;
-    padding-left: 240px;
 
     .navMenuButtons {
       text-decoration: none;
@@ -130,7 +134,7 @@ html {
 .second-box {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   margin-right: 165px;
   height: 560px;
 
@@ -138,7 +142,6 @@ html {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding-left: 300px;
   }
 
   .play-button {
@@ -196,16 +199,25 @@ html {
   }
   .photos {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     gap: 40px;
     padding-top: 90px;
-  }
-  .card-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
+
+    .card-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .white-border {
@@ -214,10 +226,108 @@ html {
     width: 293px;
     height: 198px;
     bottom: 93px;
-  
-
     background: #ffffff;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+
+    .support {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 33px;
+      gap: 20px;
+
+      .support-txt {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+      }
+      .read-more {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+      .small-txt {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+      }
+
+      .read-more {
+        text-decoration: none;
+        font-size: 12px;
+        color: #ed4c5c;
+        text-align: center;
+      }
+    }
   }
+}
+
+.four-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 52px;
+
+  .numbers {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 168px;
+  }
+  .icon-red {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 230px;
+    bottom: 95px;
+  }
+  .search {
+    right: 14px;
+    position: relative;
+  }
+  .pdf {
+    right: 24px;
+    position: relative;
+  }
+  .csv {
+    right: 23px;
+    position: relative;
+  }
+  .cloud-search {
+    left: 6px;
+    position: relative;
+  }
+}
+.five-box{display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: #ED4C5C;
+height: 500px;
+
+.five-box-image{display: flex;
+flex-direction: row;
+gap: 80px;}
+.five-box-txt{display: flex;
+  flex-direction: column;
+  padding-left: 130px;
+  padding-top: 104px;
+  gap: 42px;}
+  
+.small-txt-1{font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+ }
+.stay{color: #ffffff;}
+
+.icons-white{display: flex;
+flex-direction: row;
+gap: 28px;}
+
+.slider{position: relative;
+top: 76px;}
 }
